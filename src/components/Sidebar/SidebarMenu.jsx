@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
-export const Sidebar = () => {
+const SidebarMenu = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-top text-center">
@@ -56,3 +56,5 @@ export const Sidebar = () => {
     </div>
   );
 };
+
+export default SidebarMenu;

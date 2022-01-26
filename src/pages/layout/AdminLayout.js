@@ -1,19 +1,21 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import { Sidebar } from "../../components/Sidebar/Sidebar";
+import SidebarMenu from "../../components/Sidebar/SidebarMenu";
 
 const AdminLayout = ({ children }) => {
   return (
-    <div className="admim-layout">
+    <div className="admin-layout">
       <div className="left">
-        <Sidebar />
+        <SidebarMenu />
       </div>
+
       <div className="right">
         <Header />
+        <div className="main"> {children}</div>
+
+        <Footer />
       </div>
-      <div className="main">{children}</div>
-      <Footer />
     </div>
   );
 };
